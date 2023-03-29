@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="decoration.css">
     <title>Watch Project
     </title>
 </head>
@@ -51,7 +52,7 @@
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
                 <div class="input-group-append">
-                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                  <button class="btn btn-outline-secondary dropdown-toggle bt-reduce" type="buttzon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Action</a>
                     <a class="dropdown-item" href="#">Another action</a>
@@ -59,7 +60,7 @@
                   </div>
                 </div>
               </div>
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <button class="btn btn-outline-success my-2 my-sm-0 bt-reduce" type="submit">Search</button>
             </form>
           <div class="text-right">
             <button class="btn btn-outline-primary" type="button">Sign In</button>
@@ -70,78 +71,50 @@
       
 
         <div class="container">
-        <div class="row">Find accomodation at the comfort of your home</div>
+        <div class="row"><h5>Find accomodation at the comfort of your home</h5></div>
         <div class="row">
                       <!--Carousol-->
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel slide" data-ride = "carousel" id="carouselExampleSlidesOnly">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-md-3">
-                    <img src="img/image1.jpg" class="d-block w-100" alt="Image 1">
-                  </div>
-                  <div class="col-md-3">
-                    <img src="img/image2.jpg" class="d-block w-100" alt="Image 2">
-                  </div>
-                  <div class="col-md-3">
-                    <img src="img/image3.jpg" class="d-block w-100" alt="Image 3">
-                  </div>
-                  <div class="col-md-3">
-                    <img src="img/image4.jpg" class="d-block w-100" alt="Image 4">
-                  </div>
+                <div class="carousel-item active">
+                      <img src="img/image1.jpg" alt="First slide" class="d-block w-100">
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-md-3">
-                    <img src="image5.jpg" class="d-block w-100" alt="Image 5">
-                  </div>
-                  <div class="col-md-3">
-                    <img src="image6.jpg" class="d-block w-100" alt="Image 6">
-                  </div>
-                  <div class="col-md-3">
-                    <img src="image7.jpg" class="d-block w-100" alt="Image 7">
-                  </div>
-                  <div class="col-md-3">
-                    <img src="image8.jpg" class="d-block w-100" alt="Image 8">
-                  </div>
+
+                <div class="carousel-item active">
+                  <img src="img/image2.jpg" alt="Second slide" class="d-block w-100">
+               </div>
+
+               <div class="carousel-item active">
+                <img src="img/image3.jpg" alt="Third slide" class="d-block w-100">
                 </div>
-              </div>
+
+                <a href="#carouselExampleControls" class="carousel-control-prev">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+                
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          
         </div>
-          
-          
-        </div>
+                      
+        
         <div class="row">
-          <div class="col-md-8">
-            <h2>Content Column</h2>
-            <p>This is the content column. You can put any content you like here.</p>
-          </div>
           <div class="col-md-4">
+            <h2>Trending Properties</h2>
+          </div>
+          <div class="col-md-8">
             <nav class="navbar navbar-expand-md navbar-light bg-light">
               <div class="navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Link 1</a>
+                    <a class="nav-link" href="#">Lagos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link 2</a>
+                    <a class="nav-link" href="#">Kano</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link 3</a>
+                    <a class="nav-link" href="#">Portharcourt</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link 4</a>
+                    <a class="nav-link" href="#">Abuja</a>
                   </li>
                 </ul>
               </div>
@@ -151,126 +124,120 @@
       </div>
           
     
-        <!--four card having the same dimensions-->
-          <div class="container">
-             <div class="row">Trending Properties</div>
-              <div class="row">
-                <div class="col-sm-3">
-                  <div class="card" style="background-image: url('path/to/image-1.jpg');">
-                    <div class="card-body">
-                      <h5 class="card-title">Card Title 1</h5>
-                      <p class="card-text">This is the content for card 1.</p>
-                      <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                  <div class="card" style="background-image: url('path/to/image-2.jpg');">
-                    <div class="card-body">
-                      <h5 class="card-title">Card Title 2</h5>
-                      <p class="card-text">This is the content for card 2.</p>
-                      <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                  <div class="card" style="background-image: url('path/to/image-3.jpg');">
-                    <div class="card-body">
-                      <h5 class="card-title">Card Title 3</h5>
-                      <p class="card-text">This is the content for card 3.</p>
-                      <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                  <div class="card" style="background-image: url('path/to/image-4.jpg');">
-                    <div class="card-body">
-                      <h5 class="card-title">Card Title 4</h5>
-                      <p class="card-text">This is the content for card 4.</p>
-                      <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                  </div>
+        <!--four card having the same section or the Trending Properties-->
+         <div class="container">
+          <div class="row">
+
+            <div class="col col-md-3 col-sm-3">
+              <div class="card bg-dark text-white">
+                <img src="img/realestate1.jpg" alt="realestate1" class="card-image">
+                <div class="card-img-overlay">
+                  <p class="card-text">self-con three bethroom flat</p>
                 </div>
               </div>
             </div>
-            
+
+            <div class="col col-md-3 col-sm-3">
+              <div class="card bg-dark text-white">
+                <img src="img/realestate2.jpg" alt="realestate2" class="card-image">
+                <div class="card-img-overlay">
+                  <p class="card-text">3 bedroom flat</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-md-3 col-sm-3">
+              <div class="card bg-dark text-white">
+                <img src="img/realestate3.jpg" alt="realestate3" class="card-image">
+                <div class="card-img-overlay">
+                  <p class="card-text">2 bedroom flat</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-md-3 col-sm-3">
+              <div class="card bg-dark text-white">
+                <img src="img/realestate5.jpg" alt="realestate5" class="card-image">
+                <div class="card-img-overlay">
+                  <p class="card-text">Bungalow</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+         </div>
         
-        <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>
+           <!--Here we insert the testimonial section-->
+
+           
         <div class="container">
-            <div class="row">Testimonials</div>
+            <div class="row"><h3>Testimonials</h3></div>
               <div class="row">
-                <div class="col-md-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Content Heading 1</h5>
-                      <p class="card-text">This is the content for the first column. You can put any content you like here.</p>
-                      <button class="btn btn-primary mt-3">Button 1</button>
+                <div class="col col-md-6 col-sm-6 ">
+                  <div class="card bg-dark text-white shape-card ">
+                    <img class="card-image" src=" img/realestate3.jpg " alt="realestate3" >
+                    <div class="card-img-overlay">
+                      <p class="card-text">Read, to more or know about us</p>
+                      <a class="btn btn-primary mt-3">Contact Us</a>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Content Heading 2</h5>
-                      <p class="card-text">This is the content for the second column. You can put any content you like here.</p>
-                      <button class="btn btn-primary mt-3">Button 2</button>
+                <div class="col-md-6 col-sm-6">
+                 <div class="card bg-dark text-white  shape-card">
+                    <img src="img/realestate5.jpg" alt="" class="card-image">
+                    <div class="card-img-overlay">
+                        <p class="card-text">
+                          Are You a LandLord Or Agent
+                        </p>
+                        <a href="#" class="btn btn-primary">Use Property</a>
                     </div>
-                  </div>
+                 </div>
                 </div>
             </div>
           </div>
     </div>
+
         <!--here comes the  footer-->
         <footer class="footer">
           <div class="container">
             <div class="row">
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-2 col-sm-2">
                 <h5>Quick LInk</h5>
                 <ul class="list-unstyled">
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
-                  <li><a href="#">Link 4</a></li>
+                  <li><a href="#">Company</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">contact Us</a></li>
                 </ul>
               </div>
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-2 col-sm-2">
                 <h5>Products</h5>
                 <ul class="list-unstyled">
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
-                  <li><a href="#">Link 4</a></li>
+                  <li><a href="#">Unidash</a></li>
+                  <li><a href="#">Express.com</a></li>
                 </ul>
               </div>
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-3 col-sm-2">
                 <h5>Legal</h5>
                 <ul class="list-unstyled">
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
-                  <li><a href="#">Link 4</a></li>
+                  <li><a href="#">Terms of Services</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+
                 </ul>
               </div>
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-2 col-sm-2">
                 <h5>Resources</h5>
                 <ul class="list-unstyled">
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
-                  <li><a href="#">Link 4</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">FAQ</a></li>
                 </ul>
               </div>
-              <div class="col-md-3 col-sm-6">
+              <div class="col-md-3 col-sm-4">
                 <h5>contacts</h5>
                 <ul class="list-unstyled">
-                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Support@findhome.com</a></li>
                   <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
+                  <li><a href="#">@2023findahome Allright Reserved</a></li>
                   <li><a href="#">Link 4</a></li>
                 </ul>
               </div>

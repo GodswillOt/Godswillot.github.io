@@ -1,0 +1,30 @@
+@media screen and (max-width : 650px ) {
+footer div li {
+   
+}
+
+footer div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(18, 18, 34)
+}
+
+footer{
+    margin-top: 10px;
+    color: white;
+}
+
+
+input,{
+    width: 40%;
+}
+
+.navbar-brand {
+    font-size: 2px;
+}
+
+
+
+}
+
