@@ -1,3 +1,11 @@
+
+
+
+
+
+
+/*setting out the media queries*/
+
 @media screen and (max-width : 650px ) {
 footer div li {
    
@@ -7,7 +15,7 @@ footer div {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: rgb(18, 18, 34)
+    background-color: rgb(18, 18, 34);
 }
 
 footer{
@@ -16,7 +24,7 @@ footer{
 }
 
 
-input,{
+input {
     width: 40%;
 }
 
